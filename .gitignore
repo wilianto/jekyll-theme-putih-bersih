@@ -1,0 +1,8 @@
+*.gem
+.bundle
+.sass-cache
+_site
+_posts
+about.md
+_config.yml
+Gemfile.lock

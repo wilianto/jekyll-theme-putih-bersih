@@ -1,0 +1,115 @@
+$primary-font-family: 'Open Sans', sans-serif;
+$secondary-font-family: Courier New, Courier, monospace;
+$normal-font-size: 17px;
+$normal-line-height: 1.7;
+$base-color: #000000;
+$lighter-base-color: lighten($base-color, 25%);
+$soft-grey-color: #F1F1F1;
+$darken-grey-color: darken($soft-grey-color, 25%);
+
+body {
+    font-family: $primary-font-family;
+    font-size: $normal-font-size;
+    line-height: $normal-line-height;
+}
+
+h1, h2, h3 {
+    margin: 0px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+}
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+    h1 {
+        line-height: 1;
+        margin: 0px;
+        text-transform: uppercase;
+    }
+
+    small {
+        font-size: 15px;
+        font-family: Courier New, Courier, monospace;
+    }
+}
+
+.navbar {
+    text-align: center;
+    padding: 10px 0px;
+    border-top: 1px solid $soft-grey-color;
+    border-bottom: 1px solid $soft-grey-color;
+
+    ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+
+        li {
+            display: inline-block;
+            margin: 0px 10px;
+
+            a {
+                color: $lighter-base-color;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: $normal-font-size - 2;
+
+                &:hover {
+                    border-bottom: 1px solid $darken-grey-color;
+                }
+            }
+        }
+    }
+}
+
+.content {
+    padding: 10px 0px;
+
+    .post-list {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+
+        li {
+            padding: 5px 0px;
+        }
+
+        &__date {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            font-size: $normal-font-size - 5;
+            padding-right: 10px;
+        }
+
+        &__title {
+            clear: both;
+            display: inline-block;
+
+            h2 {
+                font-size: $normal-font-size;
+                font-weight: 500;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    border-top: 1px solid $soft-grey-color;
+    font-size: $normal-font-size - 4;
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+
+@import "jekyll-theme-putih-bersih/syntax-highlighting";
