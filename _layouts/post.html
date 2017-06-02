@@ -6,3 +6,7 @@ layout: default
 <h2>{{ page.title | escape }}</h2>
 
 {{ content }}
+
+<div class="comments">
+    {% include disqus_comments.html %}
+</div>
