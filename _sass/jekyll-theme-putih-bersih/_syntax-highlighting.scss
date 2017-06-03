@@ -8,10 +8,11 @@
 .highlight {
   border-top: 1px solid $soft-grey-color;
   border-bottom: 1px solid $soft-grey-color;
-  overflow: scroll;
+  overflow-x: auto;
 
   .highlighter-rouge {
     background: #eef;
+    padding: 5px 30px;
   }
 
   .c     { color: #998; font-style: italic } // Comment
