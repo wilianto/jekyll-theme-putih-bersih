@@ -3,12 +3,15 @@
  */
 .highlighter-rouge {
   background: $soft-grey-color;
+  padding: 5px 15px;
 }
 
 .highlight {
   border-top: 1px solid $soft-grey-color;
   border-bottom: 1px solid $soft-grey-color;
   overflow-x: auto;
+  margin: 0px;
+  font-size: 14px;
 
   .highlighter-rouge {
     background: #eef;
